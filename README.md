@@ -32,9 +32,10 @@ make all
 
 
 TO run program , I used to run through IDE , using menu or we can run  through 
-> ./path_planning
-Listening to port 4567
-```
+`/path_planning`
+
+
+
 
 Now the path planner is running and listening on port 4567 for messages from the simulator. Next step is to open Udacity's simulator:
 ![Simulator properties screen](images/simulator_start.png)
@@ -72,6 +73,7 @@ No collisions.
 The car stays in its lane most of the time but when it changes lane because of traffic or to return to the center lane.
 
 ### The car is able to change lanes
+
 ![Lane chnage](images/lane_change.png)
 
 The car change lanes when the there is a slow car in front of it, and it is safe to change lanes (no other cars around) or when it is safe to return the center lane.
