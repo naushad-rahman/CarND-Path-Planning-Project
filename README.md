@@ -1,7 +1,5 @@
 # CarND-Path-Planning-Project-P1
-Udacity Self-Driving Car Nanodegree - Path Planning Project
 
-![Driving](images/driving.png)
 
 # Overview
 
@@ -17,12 +15,12 @@ The project has the following dependencies (from Udacity's seed project):
 - libuv 1.12.0
 - Udacity's simulator.
 
-For instructions on how to install these components on different operating systems, please, visit [Udacity's seed project](https://github.com/udacity/CarND-Path-Planning-Project). As this particular implementation was done on Mac OS, the rest of this documentation will be focused on Ubuntu OS. I am sorry to be that restrictive.
+For instructions on how to install these components on different operating systems, please, visit [Udacity's seed project](https://github.com/udacity/CarND-Path-Planning-Project). 
 
 In order to install the necessary libraries, use the [install-ubuntu.sh](./install-ubuntu.sh).
 
 # Compiling and executing the project
-I have used "clion" IDE which help me to build , debug the code .
+I have used "clion" IDE which help me to build , debug and run the code .
 ![IDE](images/clion_IDE.png)
 
 Otherhand , We can directly  build code using `make all` inside 'cmake-build-debug' folder . It will create 
@@ -44,13 +42,13 @@ Now the path planner is running and listening on port 4567 for messages from the
 
 Click the "Select" button and to run the simulator.
 
-# [Rubic](https://review.udacity.com/#!/rubrics/1020/view) points
+
 
 ## Compilation
 
 ### The code compiles correctly.
+ A Only `spline.h`  file was added [src/spline.h](./scr/spline.h). It is the [Cubic Spline interpolation implementation](http://kluge.in-chemnitz.de/opensource/spline/): a single .h file you can use splines instead of polynomials. 
 
-No changes were made in the cmake configuration. A new file was added [src/spline.h](./scr/spline.h). It is the [Cubic Spline interpolation implementation](http://kluge.in-chemnitz.de/opensource/spline/): a single .h file you can use splines instead of polynomials. It was a great suggestion from the classroom QA video. It works great.
 
 ## Valid trajectories
 
@@ -74,6 +72,8 @@ No collisions.
 The car stays in its lane most of the time but when it changes lane because of traffic or to return to the center lane.
 
 ### The car is able to change lanes
+![Lane chnage](images/lane_change.png)
+
 The car change lanes when the there is a slow car in front of it, and it is safe to change lanes (no other cars around) or when it is safe to return the center lane.
 
 ## Reflection
