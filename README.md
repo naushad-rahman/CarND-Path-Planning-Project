@@ -53,7 +53,7 @@ Click the "Select" button and to run the simulator.
 
 ## Valid trajectories
 
-### The car is able to drive at least 4.32 miles without incident.
+### The car is able to drive at least 12 miles without incident.
 I ran the simulator for 12  miles without incidents:
 
 ![12 miles](images/12_miles.png)
@@ -82,7 +82,7 @@ The car change lanes when the there is a slow car in front of it, and it is safe
 
 Based on the provided code from the seed project, the path planning algorithms start at [src/main.cpp](./src/main.cpp#L246) line 246 to the line 416. I have done all the coding in the same function , it reduce code readabilty but easy for me to debug . 
 
-###Code Flow : 
+### Code Flow : 
 
 #### Prediction [line 255 to line 290](./src/main.cpp#L255)
 
